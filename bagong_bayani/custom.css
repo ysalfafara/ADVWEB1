@@ -1,0 +1,298 @@
+body {
+	background-color: #FFFF80;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+/*	width: 760px;
+	border-bottom: 3px solid #FFFFFF;
+	border-left: 3px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+	border-top: 0px solid #FFFFFF;*/
+}
+
+.arrow {
+	vertical-align: top;
+	width: 10px;
+	height: 9px;
+	border: 0px;
+	
+}
+#c_logo {
+	background-color: #FFFFFF;
+	vertical-align: top;
+	text-align: left;
+	width: 484px;
+	height: 95px;
+	padding-top: 0px;
+	padding-left: 55px;
+}
+.c_logo {
+	color: #171411;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+}
+.c_logo P {
+	margin-top: 0px;
+	margin-left: 0px;
+}
+#vline1 {
+	background-color: #AACCDE;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	width: 1px;
+	height: 131px;
+}
+#c_name {
+	background-image:  url("images/fon1.jpg");
+	background-repeat: no-repeat;
+	vertical-align: top;
+	text-align: left;
+	padding-top: 25px;
+	padding-left: 65px;
+	width: 155px;
+	height: 106px;
+}
+.c_name {
+	color: #000000;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.c_name H1 {
+	color: #284065;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.c_name P{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+#hline2 {
+	background-image:  url("images/hl0.gif");
+	background-repeat: no-repeat;
+	vertical-align: top;
+	height: 1px;
+}
+#vline3 {
+	background-image:  url("images/vl1.gif");
+	background-repeat: no-repeat;
+	background-color: #800000;
+	vertical-align: top;
+	width: 1px;
+}
+#foto1 {
+	background-repeat: no-repeat;
+	vertical-align: top;
+	width: 591px;
+	height: 100px;
+}
+
+
+#left_box {
+	background-color: #800000;
+}
+#vmains {
+	background-color: #000080;
+	vertical-align: top;
+	width: 144px;
+	text-align: left;
+	padding-top: 21px;
+	padding-left: 23px;
+	padding-bottom: 50px;
+}
+.vmains {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.vmains H1 {
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin-top: 9px;
+	margin-bottom: 0px;
+}
+.vmains P{
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+
+.vmains a{font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px; color: #FFFFFF; text-decoration:none; font-weight: normal;}
+.vmains a:link {font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px; color: #FFFFFF; text-decoration:none; font-weight: bold;}
+.vmains a:visited {color: #FFFFFF; text-decoration:none; font-weight: bold;}
+.vmains a:hover {color: #FFFFFF; text-decoration:underline; font-weight: bold;}
+.vmains a:active {color: #FFFFFF; text-decoration:none; font-weight: bold;}
+
+a.vsubs{font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;color: #FFFFFF; text-decoration:none; font-weight: normal;}
+a.vsubs:link {font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;color: #FFFFFF; text-decoration:none; font-weight: normal;}
+a.vsubs:visited {color: #FFFFFF; text-decoration:none; 	font-weight: normal;}
+a.vsubs:hover {color: #FFFFFF; text-decoration:underline; 	font-weight: normal;}
+a.vsubs:active {color: #FFFFFF; text-decoration:none; 	font-weight: normal;}
+
+#vline4 {
+	background-image:  url("images/vl0.gif");
+	background-repeat: no-repeat;
+	background-color: #5496B6;
+	vertical-align: top;
+	width: 1px;
+}
+#welcome {
+	background-color: #FBF7E9;
+	vertical-align: top;
+	width: 343px;
+	text-align: left;
+	padding-top: 40px;
+	padding-left: 27px;
+	padding-bottom: 60px;
+}
+#welcome_full {
+	background-color: #FBF7E9;
+	vertical-align: top;
+	width: 520px;
+	text-align: left;
+	padding-top: 40px;
+	padding-left: 27px;
+	padding-right: 20px;
+	padding-bottom: 60px;
+}
+#welcome_full2 {
+	background-color: #FBF7E9;
+	vertical-align: top;
+	width: 520px;
+	text-align: left;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+}
+
+
+.welcome {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+}
+.welcome H1 {
+	color: #014783;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 22px;
+}
+.welcome H2 {
+	color: #8080FF;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 22px;
+}
+.welcome P{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+#vline6 {
+	background-color: #FBF7E9;
+	vertical-align: top;
+	width: 1px;
+}
+#vline7 {
+	background-color: #5496B6;
+	vertical-align: top;
+	width: 1px;
+}
+#l_news {
+	background-color: #00669C;
+	vertical-align: top;
+	width: 187px;
+	text-align: left;
+	padding-top: 35px;
+	padding-left: 21px;
+	padding-right: 11px;
+	padding-bottom: 30px;
+}
+.l_news {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+.l_news H1 {
+	color: #FFFFFF;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 19px;
+}
+.l_news H2 {
+	color: #BDC23F;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.l_news P{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#foto2 {
+	background-image:  url("images/foto2.jpg");
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	width: 169px;
+	height: 111px;
+		background-color: #00669C;
+
+}
+#hline3 {
+	background-color: #EFEDE3;
+	vertical-align: top;
+	height: 1px;
+}
+#hline4 {
+	background-color: #488CB0;
+	vertical-align: top;
+	height: 1px;
+}
+#hline5 {
+	background-color: #E4E2DE;
+	vertical-align: top;
+	height: 1px;
+}
+#hline6 {
+	background-color: #90B2C4;
+	vertical-align: top;
+	height: 1px;
+}
+#foot {
+	background-color: #D8D8D8;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	width: 760px;
+	height: 21px;
+	text-align: center;
+	padding-top: 10px;
+}
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	font-weight: normal;
+}
+.copyright P{
+	margin-top: 0px;
+}
