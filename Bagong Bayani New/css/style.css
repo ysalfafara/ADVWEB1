@@ -24,10 +24,12 @@ h2{
 	font-size: 20px;
 }
 h3{
-	font-size: 12px;
-	font-style: italic;
+	font-size: 13px;
 	font-weight: 100;
 	line-height: 26px;
+	position: absolute; 
+	margin-left:350px; 
+	text-align: justify;
 }
 
 h4{
@@ -45,6 +47,8 @@ h6{
 	font-size: 9px;
 	word-spacing: 2px;
 	letter-spacing: 2px;
+	position: absolute; 
+	margin-left:350px; 
 }
 
 p{
@@ -213,7 +217,7 @@ background-color: transparent;
 	margin-top: 200px;
 }
 
-#meet-us,
+#welcome,
 #services,
 #works,
 #about-us{
@@ -458,7 +462,7 @@ ul.clients li{
 	margin: 0 auto;
 }
 
-#testimonials {
+#about {
 	background: url(../img/bg4.jpg);
 	background-size: cover;
 	background-position: center;
@@ -467,7 +471,7 @@ ul.clients li{
 	text-align: center;
 }
 
-#testimonials .overlay{
+#about .overlay{
 	background: rgba(34, 34, 34, 0.85);
 	height: auto;
 	min-height: 200px;
