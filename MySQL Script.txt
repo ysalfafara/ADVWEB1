@@ -1,0 +1,9 @@
+CREATE DATABASE `advweb1` ;
+CREATE TABLE `advweb1` . `users` (
+	`user_id` INT(10) NOT null AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(45) not null,
+	`email` varchar(45) not null,
+	`telephone` varchar(45),
+	`mobile` varchar(45) not null,
+	`message` varchar(45) not null
+	) engine = INNODB;
