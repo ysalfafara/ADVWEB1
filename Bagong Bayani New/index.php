@@ -1,3 +1,7 @@
+<?php
+    include_once 'dbconfig.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -338,6 +342,68 @@
     </div>
 
     <!-- Contact Section -->
+<?php
+    include_once 'dbconfig.php';
+$Err = $nameErr = $emailErr = $mobileErr = $messageErr = "";
+$name = $email = $telephone = $mobile = $message = "";
+
+if(isset($_POST['submit'])){
+    $name = test_input($_POST["name"]);
+    // check if fname only contains letters and numbers
+    if (!preg_match("/^[a-zA-Z0-9 ]*$/", $name)) {
+      $nameErr = "Only letters and numbers allowed"; 
+      $Err = "Err";
+    }
+
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+      $Err = "Err";
+    }
+
+    $mobile = test_input($_POST["mobile"]);
+    // check if phoneNum only contains numbers
+    if (!preg_match("/^[0-9]*$/",$mobile)) {
+      $mobileErr = "Only numbers are allowed";
+      $Err = "Err"; 
+    }
+
+    if (empty($_POST["message"])) {    
+      $message = "";    
+    } else {    
+      $message = test_input($_POST["message"]);   
+    }
+
+    if($Err != "Err"){
+      $sql_query = "INSERT INTO users(name, email, telephone, mobile, message) VALUES('$name', '$email', '$telephone','$mobile', '$message')";
+      
+      mysql_query($sql_query);
+      ?>
+      <script type="text/javascript">
+      alert('Data are successfully saved!');
+      window.location.href='index.php';
+      </script>
+      <?php
+    }
+    else{
+    ?>
+    <script type="text/javascript">
+    alert('Error occured while saving data!');
+    </script>
+    <?php
+    }
+  }
+
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+?>
+
+
     <div id="contact">
         <div class="container">
             <div class="section-title text-center">
@@ -363,28 +429,39 @@
                           </ul>
                     </address>
                 </div>
-
                 <div class="col-md-9">
-                    <form autocomplete="off">
+                    <form method="post"> 
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name">
-                                <input type="text" class="form-control" placeholder="Telephone">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Email">
-                                <input type="text" class="form-control" placeholder="Mobile">
-                            </div>
-                        </div>
-                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                        <div class="text-right">
-                            <a href="#" class="btn send-btn">Send</a>
-                        </div>
-                    </form>
+                                
+                                <input type="text" class="form-control" name="name" placeholder="Name" value="<?php echo $name;?>" required>
+                                     <span class="error"><?php echo $nameErr;?></span>
+            
+       
+                                 <input type="text" class="form-control" name="email" placeholder="Email" value="<?php echo $email;?>" required>
+                                    <span class="error"><?php echo $emailErr;?></span>
+                             </div>
+                             
+                             <div class="col-md-6">
+
+                                <input type="text" class="form-control" name="telephone" placeholder="Telephone" value="<?php echo $telephone;?>">
+          
+                                <input  type="text" class="form-control" name="mobile" placeholder="Mobile" value="<?php echo $mobile;?>">
+                                    <span class="error"><?php echo $mobileErr;?></span>
+                             </div>
+
+                <input type="text" class="form-control" name="message" placeholder="Message" value="<?php echo $message;?>">
+                
+                <div class="text-right">
+                    <button type="submit" class="btn send-btn" name="submit" value="submit"> Send </button>
                 </div>
+
+                </form>
             </div>
         </div>
     </div>
+
+
 
     <nav id="footer">
         <div class="container">
